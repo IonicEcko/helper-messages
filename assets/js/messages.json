@@ -39,7 +39,7 @@
             "duplicate": [{
                 "project": "mcpe",
                 "name": "Duplicate",
-                "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%*. I've requested this report be resolved and linked as a duplicate.\n\nIf you would like to add a vote and any extra information to the main ticket it would be appreciated.\n\nIf you haven't already, you might like to make use of the [*+search feature+*|https://bugs.mojang.com/issues/?jql=project=%project_id%] to see if the issue has already been mentioned.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%* so I've requested this report be resolved and linked as a duplicate.\n\nIf you would like to add a vote and any extra information to the main ticket it would be appreciated.\n\nIf you haven't already, you might like to make use of the [*+search feature+*|https://bugs.mojang.com/issues/?jql=project=%project_id%] to see if the issue has already been mentioned.\n\n%quick_links%",
                 "fillname": ["Enter parent issue ID"]
             }, {
                 "project": "bds",
