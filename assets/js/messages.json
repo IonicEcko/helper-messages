@@ -52,7 +52,7 @@
             "duplicate_fix": [{
                 "project": "mcpe",
                 "name": "Duplicate (fixed)",
-                "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%*. I've requested this report be resolved and linked as a duplicate.\n\nThat ticket has already been resolved as Fixed. The fix will arrive in the next version or is already included in the latest development version of the game, you can check the Fix Version/s field in that ticket to learn more.\n\nIf you haven't already, you might like to make use of the [*+search feature+*|https://bugs.mojang.com/issues/?jql=project=%project_id%] to see if the issue has already been mentioned.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%* so I've requested this report be resolved and linked as a duplicate.\n\nThat ticket has already been resolved as Fixed which means the fix will arrive in the next version or is already included in the latest development version of the game. You can check the Fix Version/s field in that ticket to learn more.\n\nIf you haven't already, you might like to make use of the [*+search feature+*|https://bugs.mojang.com/issues/?jql=project=%project_id%] to see if the issue has already been mentioned.\n\n%quick_links%",
                 "fillname": ["Enter parent issue ID"]
             }]
         },
@@ -60,7 +60,7 @@
             "cdup_wai": [{
                 "project": ["mcpe", "bds"],
                 "name": "Duplicate (wai)",
-                "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%*. I've requested this report be resolved and linked as a duplicate.\n\nThat ticket has already been resolved, which means this is not considered a bug and won't be fixed. Please do not leave a comment on the linked ticket.\n\nIf you haven't already, you might like to make use of the [*+search feature+*|https://bugs.mojang.com/issues/?jql=project=%project_id%] to see if the issue has already been mentioned.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%* so I've requested this report be resolved and linked as a duplicate.\n\nThat ticket has already been resolved, which means this is not considered a bug and won't be fixed. Please do not leave a comment on the linked ticket.\n\nIf you haven't already, you might like to make use of the [*+search feature+*|https://bugs.mojang.com/issues/?jql=project=%project_id%] to see if the issue has already been mentioned.\n\n%quick_links%",
                 "fillname": ["Enter parent issue ID"]
             }]
         },
@@ -167,18 +167,6 @@
                 "project": ["mcpe", "bds"],
                 "name": "External server issue",
                 "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Invalid*{color}.\n\nUnfortunately we don't accept issues related to External Servers here on the bug tracker, but please add more details if you think this also affects multiplayer over Realms, LAN, or XBL.\n\nI'd suggest contacting the server owner directly or seeking help on the Minecraft forums.\n\n%quick_links%",
-                "fillname": []
-            }]
-        }, {
-            "devinfo": [{
-                "project": "mcpe",
-                "name": "Attach device information",
-                "message": "*Thank you for your report!*\nCould you please include information about your device? Without it we may be unable to reproduce the issue.\n\n%quick_links%",
-                "fillname": []
-            }, {
-                "project": "bds",
-                "name": "Attach server information",
-                "message": "*Thank you for your report!*\nCould you please include information about your server? Without it we may be unable to reproduce the issue.\n\n%quick_links%",
                 "fillname": []
             }]
         }, {

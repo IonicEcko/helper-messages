@@ -5,11 +5,11 @@ window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js');
 
 // Available projects
-const projects = ["mc", "mcl", "mcpe", "mcapi", "mce", "bds"];
+const projects = ["mcpe", "bds"];
 // Timeout for popper copy tooltip
 var clicktimeout;
 // Currently selected project
-var project = "mc";
+var project = "mcpe";
 
 // map for dropdown values and their corresponding messages
 var dropdownMap = new Map();
@@ -21,7 +21,7 @@ $(document).ready(function () {
   // Detect project identifier in URL
   const url = window.location.href;
   if (!url.includes('#')) {
-    window.location.replace(url + '#MC');
+    window.location.replace(url + '#MCPE');
   } else {
     var id = url.substring(url.lastIndexOf('#') + 1).toLowerCase();
     if (projects.includes(id)) {
