@@ -122,14 +122,6 @@ $("select").change(function () {
     $(".stdtext").html('<p class="text-muted" id="msginfo">This message doesn\'t require any extra info.</p>');
   }
 
-  // Does the message have Name?
-  const mod = dropdownMap.get(code);
-  if (message.modname.length >= 1) {
-    $(".stdtext").html('<input class="form-control" type="text" placeholder="' + mod.modname[0] + '" id="mod">');
-  } else {
-    $(".stdtext").html('<p class="text-muted" id="msginfo">This message doesn\'t require a name.</p>');
-  }
-
   // Enable copy button
   $("#copybutton").removeAttr("disabled");
 });
