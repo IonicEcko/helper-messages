@@ -92,7 +92,7 @@
             "cinc": [{
                 "project": ["mcpe"],
                 "name": "Incomplete",
-                "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Incomplete*{color}.\n\nYour report does not contain enough information. As such, we're unable to understand or reproduce the problem.\n\nPlease review the guidelines linked below before making further reports.\n\nPlease make sure you include the OS you run BDS on (iOS, Xbox etc) and steps on how to reproduce your issue (including screenshots/video where possible) so it can be confirmed by a volunteer.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Incomplete*{color}.\n\nYour report does not contain enough information. As such, we're unable to understand or reproduce the problem.\n\nPlease review the guidelines linked below before making further reports.\n\nPlease make sure you include the device you play on (iPhone, Xbox etc) and steps on how to reproduce your issue (including screenshots/video where possible) so it can be confirmed by a volunteer.\n\n%quick_links%",
                 "fillname": []
             }, {
                 "project": ["bds"],
