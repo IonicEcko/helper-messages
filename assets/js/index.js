@@ -5,7 +5,7 @@ window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js');
 
 // Available projects
-const projects = ["mcpe", "bds", "realms", "gen"];
+const projects = ["mcpe", "bds", "realms", "generic"];
 // Timeout for popper copy tooltip
 var clicktimeout;
 // Currently selected project
@@ -27,7 +27,7 @@ $(document).ready(function () {
     if (projects.includes(id)) {
       project = id;
     } else {
-      window.location.replace(url.substring(0, url.lastIndexOf('#')) + '#MC');
+      window.location.replace(url.substring(0, url.lastIndexOf('#')) + '#MCPE');
     }
   }
 

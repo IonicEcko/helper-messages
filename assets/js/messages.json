@@ -14,7 +14,7 @@
                 "value": "*Quick Links*:\n📓 [Issue Guidelines|https://bugs.mojang.com/projects/REALMS/summary] -- 💬 [Community Support|https://minecrafthopper.net/help/technical-support-resources/] -- 📧 [Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Realms Wiki|https://minecraft.gamepedia.com/Realms] -- 📖 [FAQs|https://help.minecraft.net/hc/en-us/sections/360004954931-Minecraft-Realms]"
             },
             {
-                "project": "gen",
+                "project": "generic",
                 "value": "*Quick Links*:\n📓 [Issue Guidelines|https://bugs.mojang.com/projects/REALMS/summary] -- 💬 [Community Support|https://minecrafthopper.net/help/technical-support-resources/] -- 📧 [Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Realms Wiki|https://minecraft.gamepedia.com/Realms] -- 📖 [FAQs|https://help.minecraft.net/hc/en-us/sections/360004954931-Minecraft-Realms]"
             }
         ],
@@ -29,11 +29,11 @@
             },
             {
                 "project": "realms",
-                "value": "Realms"
+                "value": "REALMS"
             },
             {
-                "project": "gen",
-                "value": "Generic"
+                "project": "generic",
+                "value": "GENERIC"
             }   
         ]
     },
@@ -187,14 +187,14 @@
             }]
         }, {
             "cnote": [{
-                "project": ["gen"],
+                "project": ["generic"],
                 "name": "Note (Panel)",
                 "message": "{panel:title=Note|borderStyle=dashed|borderColor=#ccc|titleBGColor=#F7D6C1|bgColor=#FFFFCE}\n%s%\n{panel}",
                 "fillname": ["Enter note here."]
             }]
         }, {
             "cworkaround": [{
-                "project": ["gen"],
+                "project": ["generic"],
                 "name": "Workaround (Panel)",
                 "message": "{panel:title=Workaround|borderStyle=dashed|borderColor=#ccc|titleBGColor=#C1F7D6|bgColor=#CEFFFF}\n%s%\n{panel}",
                 "fillname": ["Enter workaround here."]
