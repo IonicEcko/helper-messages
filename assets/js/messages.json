@@ -14,7 +14,7 @@
                 "value": "*Quick Links*:\n📓 [Issue Guidelines|https://bugs.mojang.com/projects/REALMS/summary] -- 💬 [Community Support|https://minecrafthopper.net/help/technical-support-resources/] -- 📧 [Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Realms Wiki|https://minecraft.gamepedia.com/Realms] -- 📖 [FAQs|https://help.minecraft.net/hc/en-us/sections/360004954931-Minecraft-Realms]"
             },
             {
-                "project": "generic",
+                "project": "gen",
                 "value": "*Quick Links*:\n📓 [Issue Guidelines|https://bugs.mojang.com/projects/REALMS/summary] -- 💬 [Community Support|https://minecrafthopper.net/help/technical-support-resources/] -- 📧 [Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Realms Wiki|https://minecraft.gamepedia.com/Realms] -- 📖 [FAQs|https://help.minecraft.net/hc/en-us/sections/360004954931-Minecraft-Realms]"
             }
         ],
@@ -32,7 +32,7 @@
                 "value": "Realms"
             },
             {
-                "project": "generic",
+                "project": "gen",
                 "value": "Generic"
             }   
         ]
