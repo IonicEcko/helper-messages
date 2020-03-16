@@ -27,7 +27,7 @@ $(document).ready(function () {
     if (projects.includes(id)) {
       project = id;
     } else {
-      window.location.replace(url.substring(0, url.lastIndexOf('#')) + '#MC');
+      window.location.replace(url.substring(0, url.lastIndexOf('#')) + '#MCPE');
     }
   }
 
