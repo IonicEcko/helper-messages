@@ -5,11 +5,11 @@ window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js');
 
 // Available projects
-const projects = ["MCPE", "RLMS", "BDS", "GEN"];
+const projects = ["mcpe", "bds", "rlms", "gen"];
 // Timeout for popper copy tooltip
 var clicktimeout;
 // Currently selected project
-var project = "MCPE";
+var project = "mcpe";
 
 // map for dropdown values and their corresponding messages
 var dropdownMap = new Map();
