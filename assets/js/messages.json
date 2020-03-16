@@ -187,14 +187,14 @@
             }]
         }, {
             "cnote": [{
-                "project": ["generic"],
+                "project": ["gen"],
                 "name": "Note (Panel)",
                 "message": "{panel:title=Note|borderStyle=dashed|borderColor=#ccc|titleBGColor=#F7D6C1|bgColor=#FFFFCE}\n%s%\n{panel}",
                 "fillname": ["Enter note here."]
             }]
         }, {
             "cworkaround": [{
-                "project": ["generic"],
+                "project": ["gen"],
                 "name": "Workaround (Panel)",
                 "message": "{panel:title=Workaround|borderStyle=dashed|borderColor=#ccc|titleBGColor=#C1F7D6|bgColor=#CEFFFF}\n%s%\n{panel}",
                 "fillname": ["Enter workaround here."]
