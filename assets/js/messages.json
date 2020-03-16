@@ -15,7 +15,7 @@
             },
             {
                 "project": "gen",
-                "value": "*Quick Links*:\n📓 [Issue Guidelines|https://bugs.mojang.com/projects/REALMS/summary] -- 💬 [Community Support|https://minecrafthopper.net/help/technical-support-resources/] -- 📧 [Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Realms Wiki|https://minecraft.gamepedia.com/Realms] -- 📖 [FAQs|https://help.minecraft.net/hc/en-us/sections/360004954931-Minecraft-Realms]"
+                "value": "*Quick Links*:\n📓 [Issue Guidelines|https://bugs.mojang.com/projects/MCPE/summary] -- 💬 [Community Support|https://minecrafthopper.net/help/technical-support-resources/] -- 📧 [Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Game Wiki|https://minecraft.gamepedia.com/Minecraft_Wiki]"
             }
         ],
         "project_id": [
@@ -42,12 +42,12 @@
             "diff_project": [{
                 "project": "mcpe",
                 "name": "Wrong project",
-                "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Invalid*{color}.\n\nThis is related to a different project. Use one of the links below to go to the correct project.\n-- [Minecraft: Java Edition|https://bugs.mojang.com/browse/MC] --- Windows, Mac, and Linux\n-- [Minecraft Launcher|https://bugs.mojang.com/browse/MCL] --- bugs about the Minecraft Launcher specifically\n-- [Minecraft: Bedrock Edition|https://bugs.mojang.com/browse/MCPE] --- Gear VR, iOS, Android, Windows 10 (from the Windows store), Xbox One, Windows 10 Mobile, Fire TV, Nintendo Switch, and PS4\n-- [Minecraft: Earth|https://bugs.mojang.com/browse/MCE] --- AR Compatible Devices\n\nPlease don't forget to search for an existing issue matching yours in the appropriate project before raising a new one.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Invalid*{color}.\n\nThis is related to a different project. Use one of the links below to go to the correct project.\n-- [Minecraft: Java Edition|https://bugs.mojang.com/browse/MC] --- Windows, Mac, and Linux\n-- [Minecraft Launcher|https://bugs.mojang.com/browse/MCL] --- bugs about the Minecraft Launcher specifically\n-- [Minecraft: Bedrock Edition|https://bugs.mojang.com/browse/MCPE] --- Gear VR, iOS, Android, Windows 10 (from the Windows store), Xbox One, Windows 10 Mobile, Fire TV, Nintendo Switch, and PS4\n-- [Minecraft: Earth|https://bugs.mojang.com/browse/MCE] --- AR Compatible Devices\n-- [Realms Plus|https://bugs.mojang.com/browse/REALMS] --- Minecraft Realms for Java and Bedrock\n\nPlease don't forget to search for an existing issue matching yours in the appropriate project before raising a new one.\n\n%quick_links%",
                 "fillname": []
             }, {
                 "project": "bds",
                 "name": "Wrong project",
-                "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Invalid*{color}.\n\nThis project is for the Bedrock Dedicated Server software only. Use one of the links below to go to the correct project.\n-- [Minecraft: Java Edition|https://bugs.mojang.com/browse/MC] --- Windows, Mac, and Linux\n-- [Minecraft Launcher|https://bugs.mojang.com/browse/MCL] --- bugs about the Minecraft Launcher specifically\n-- [Minecraft: Bedrock Edition|https://bugs.mojang.com/browse/MCPE] --- Gear VR, iOS, Android, Windows 10 (from the Windows store), Xbox One, Windows 10 Mobile, Fire TV, Nintendo Switch, and PS4\n-- [Minecraft: Earth|https://bugs.mojang.com/browse/MCE] --- AR Compatible Devices\n\nPlease don't forget to search for an existing issue matching yours in the appropriate project before raising a new one.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Invalid*{color}.\n\nThis project is for the Bedrock Dedicated Server software only. Use one of the links below to go to the correct project.\n-- [Minecraft: Java Edition|https://bugs.mojang.com/browse/MC] --- Windows, Mac, and Linux\n-- [Minecraft Launcher|https://bugs.mojang.com/browse/MCL] --- bugs about the Minecraft Launcher specifically\n-- [Minecraft: Bedrock Edition|https://bugs.mojang.com/browse/MCPE] --- Gear VR, iOS, Android, Windows 10 (from the Windows store), Xbox One, Windows 10 Mobile, Fire TV, Nintendo Switch, and PS4\n-- [Minecraft: Earth|https://bugs.mojang.com/browse/MCE] --- AR Compatible Devices\n-- [Realms Plus|https://bugs.mojang.com/browse/REALMS] --- Minecraft Realms for Java and Bedrock\n\nPlease don't forget to search for an existing issue matching yours in the appropriate project before raising a new one.\n\n%quick_links%",
                 "fillname": []
             }]
         },
@@ -103,7 +103,7 @@
         },
         {
             "cfut": [{
-                "project": ["mcpe", "bds"],
+                "project": ["gen"],
                 "name": "Future Version (Panel)",
                 "message": "{panel:borderColor=orange}(!) Please do not mark _Unreleased Versions_ as affected. You don't have access to them yet.{panel}\n",
                 "fillname": []
@@ -136,7 +136,7 @@
             }]
         }, {
             "cpriv": [{
-                "project": ["mcpe", "bds"],
+                "project": "gen",
                 "name": "Private issue (Panel)",
                 "message": "{panel:borderColor=orange}(!) Please do not mark issues as _private_, unless your bug report is an exploit or contains information about your username or server.{panel}\n",
                 "fillname": []
@@ -150,14 +150,14 @@
             }]
         }, {
             "ctech": [{
-                "project": ["mcpe", "bds"],
+                "project": ["mcpe", "bds", "rlms"],
                 "name": "Technical support issue",
                 "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Invalid*{color}.\n\nThis is a technical support issue; this site is for bug reports only. We do not have the resources to provide you with technical support.\nPlease contact the *community support*, linked below.\n\n%quick_links%",
                 "fillname": []
             }]
         }, {
             "cmult": [{
-                "project": ["mcpe", "bds"],
+                "project": ["mcpe", "bds", "rlms"],
                 "name": "Multiple issues in one report",
                 "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Invalid*{color}.\n\nPlease put only one bug report in each ticket. It is very difficult to keep track of bugs when they are not in their own tickets, and it is easier for you to make multiple tickets than for the mods to separate them.\\Please don't forget to search before logging each report as it is likely your issue has already been reported.\n\n%quick_links%",
                 "fillname": []
@@ -171,14 +171,14 @@
             }]
         }, {
             "clog": [{
-                "project": ["mcpe", "bds"],
+                "project": ["mcpe", "bds", "rlms"],
                 "name": "Crash logged automatically",
                 "message": "*Thank you for your report!*\n\nCrashes such as these are now logged automatically, this will therefore be investigated further by the development team internally.\n\n%quick_links%",
                 "fillname": []
             }]
         }, {
             "csup": [{
-                "project": ["mcpe", "bds"],
+                "project": ["mcpe", "bds", "rlms"],
                 "name": "Contact Support",
                 "message": "*Thank you for your report!*\nHowever, unfortunately we are unable to help with your report.\n\nAs this is an issue with your account or billing, you will need to contact [Mojang Customer Support|https://help.minecraft.net/hc/en-us/requests/new] directly.\n\nThe bug report site is manned by volunteers and we don't have the ability to assist.\n\nBest of luck getting it sorted.\n\n%quick_links%",
                 "fillname": []
