@@ -204,6 +204,13 @@
                 "message": "{panel:title=Workaround|borderStyle=dashed|borderColor=#ccc|titleBGColor=#C1F7D6|bgColor=#CEFFFF}\n%s%\n{panel}",
                 "fillname": ["Enter workaround here."]
             }]
+        }, {
+            "car": [{
+                "project": ["bds"],
+                "name": "Awaiting Response",
+                "message": "I've not heard back from you in a while.\n\nIn order to keep the Bedrock Dedicated Server project running smoothly I'm going to request this issue be closed as *Awaiting Response*.\n\nNever fear though! If this is still affecting you in the latest version (and is related to Bedrock Dedicated Server and not the Minecraft Bedrock game) all you have to do is comment and it will reopen.\n\nIf your issue does still exist but is related to the game and not the server software please head over to the [Minecraft (Bedrock codebase) project|https://bugs.mojang.com/projects/MCPE/summary].\n\n%s%\n\n%quick_links%",
+                "fillname": ["Enter Display Name here."]
+            }]
         }
     ]
 }
