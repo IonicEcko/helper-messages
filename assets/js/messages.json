@@ -52,20 +52,20 @@
             }]
         },
         {
-            "duplicate": {
+            "duplicate": [{
                 "project": ["mcpe", "bds", "rlms"],
                 "name": "Duplicate",
                 "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%* so I've requested this report be resolved and linked as a duplicate.\n\nIf you would like to add a vote and any extra information to the main ticket it would be appreciated.\n\nPlease don't forget to use the [*+search feature+*|https://bugs.mojang.com/issues/?jql=project=%project_id%] before submitting a bug to see if it has already been reported. The less time we spend linking duplicates means more time testing and confirming the bugs.\n\n%quick_links%",
                 "fillname": ["Enter parent issue ID"]
-            }
+            }]
         },
         {
-            "duplicate_wp": {
+            "duplicate_wp": [{
                 "project": "bds",
                 "name": "Duplicate - Wrong Project",
                 "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%* so I've requested this report be resolved and linked as a duplicate.\n\nIf you would like to add a vote and any extra information to the main ticket it would be appreciated.\n\nPlease note, you have also raised this report in the Bedrock Dedicated Server project when it actually relates to the Minecraft Bedrock game - which may also explain why you didn't find it when searching.\n\nFor issues with the Minecraft Bedrock game, please head over to the [Minecraft Bedrock codebase project|https://bugs.mojang.com/browse/MCPE] and make sure the Project field reflects that when logging a report.\n\n%quick_links%",
                 "fillname": ["Enter parent issue ID"]
-            }
+            }]
         },
         {
             "duplicate_fix": [{
