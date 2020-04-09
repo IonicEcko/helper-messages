@@ -3,19 +3,19 @@
         "quick_links": [
             {
                 "project": "mcpe",
-                "value": "*Quick Links*:\n📓 [Issue Guidelines|https://bugs.mojang.com/projects/MCPE/summary] -- 💬 [Community Support|https://minecrafthopper.net/help/technical-support-resources/] -- 📧 [Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Game Wiki|https://minecraft.gamepedia.com/Minecraft_Wiki]"
+                "value": "*Quick Links*:\n📓 [Issue Guidelines|https://help.minecraft.net/hc/en-us/articles/360039268071] -- 💬 [Community Support Discord|https://discord.gg/58Sxm23] -- 📧 [Mojang Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Game Wiki|https://minecraft.gamepedia.com/Minecraft_Wiki]"
             },
             {
                 "project": "bds",
-                "value": "*Quick Links*:\n📓 [Issue Guidelines|https://bugs.mojang.com/projects/BDS/summary] -- 💬 [Community Support|https://minecrafthopper.net/help/technical-support-resources/] -- 📧 [Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [BDS Wiki|https://minecraft.gamepedia.com/Bedrock_Dedicated_Server] -- 📖 [FAQs|https://help.minecraft.net/hc/en-us/articles/360035131651-Dedicated-Servers-for-Minecraft-on-Bedrock-]"
+                "value": "*Quick Links*:\n📓 [Issue Guidelines|https://help.minecraft.net/hc/en-us/articles/360039268071] -- 💬 [Community Support Discord|https://discord.gg/58Sxm23] -- 📧 [Mojang Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [BDS Wiki|https://minecraft.gamepedia.com/Bedrock_Dedicated_Server] -- 📖 [FAQs|https://help.minecraft.net/hc/en-us/articles/360035131651-Dedicated-Servers-for-Minecraft-on-Bedrock-]"
             },
             {
                 "project": "rlms",
-                "value": "*Quick Links*:\n📓 [Issue Guidelines|https://bugs.mojang.com/projects/REALMS/summary] -- 💬 [Community Support|https://minecrafthopper.net/help/technical-support-resources/] -- 📧 [Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Realms Wiki|https://minecraft.gamepedia.com/Realms] -- 📖 [FAQs|https://help.minecraft.net/hc/en-us/sections/360004954931-Minecraft-Realms]"
+                "value": "*Quick Links*:\n📓 [Issue Guidelines|https://help.minecraft.net/hc/en-us/articles/360039268071] -- 💬 [Community Support Discord|https://discord.gg/58Sxm23] -- 📧 [Mojang Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Realms Wiki|https://minecraft.gamepedia.com/Realms] -- 📖 [FAQs|https://help.minecraft.net/hc/en-us/sections/360004954931-Minecraft-Realms]"
             },
             {
                 "project": "gen",
-                "value": "*Quick Links*:\n📓 [Issue Guidelines|https://bugs.mojang.com/projects/MCPE/summary] -- 💬 [Community Support|https://minecrafthopper.net/help/technical-support-resources/] -- 📧 [Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Game Wiki|https://minecraft.gamepedia.com/Minecraft_Wiki]"
+                "value": "*Quick Links*:\n📓 [Issue Guidelines|https://help.minecraft.net/hc/en-us/articles/360039268071] -- 💬 [Community Support Discord|https://discord.gg/58Sxm23] -- 📧 [Mojang Customer Support|https://help.minecraft.net/hc/en-us/requests/new] -- 📖 [Game Wiki|https://minecraft.gamepedia.com/Minecraft_Wiki]"
             }
         ],
         "project_id": [
@@ -52,22 +52,20 @@
             }]
         },
         {
-            "duplicate": [{
-                "project": "mcpe",
+            "duplicate": {
+                "project": ["mcpe", "bds", "rlms"],
                 "name": "Duplicate",
-                "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%* so I've requested this report be resolved and linked as a duplicate.\n\nIf you would like to add a vote and any extra information to the main ticket it would be appreciated.\n\nIf you haven't already, you might like to make use of the [*+search feature+*|https://bugs.mojang.com/issues/?jql=project=%project_id%] to see if the issue has already been mentioned.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%* so I've requested this report be resolved and linked as a duplicate.\n\nIf you would like to add a vote and any extra information to the main ticket it would be appreciated.\n\nPlease don't forget to use the [*+search feature+*|https://bugs.mojang.com/issues/?jql=project=%project_id%] before submitting a bug to see if it has already been reported. The less time we spend linking duplicates means more time testing and confirming the bugs.\n\n%quick_links%",
                 "fillname": ["Enter parent issue ID"]
-            }, {
+            }
+        },
+        {
+            "duplicate_wp": {
                 "project": "bds",
-                "name": "Duplicate",
-                "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%*.\n\nIf you would like to add a vote and any extra information to the main ticket it would be appreciated.\n\nIf you haven't already, you might like to make use of the [*+search feature+*|https://bugs.mojang.com/issues/?jql=project=%project_id%] to see if the issue has already been mentioned.\n\n%quick_links%",
+                "name": "Duplicate - Wrong Project",
+                "message": "*Thank you for your report!*\nWe're actually already tracking this issue under *%s%* so I've requested this report be resolved and linked as a duplicate.\n\nIf you would like to add a vote and any extra information to the main ticket it would be appreciated.\n\nPlease note, you have also raised this report in the Bedrock Dedicated Server project when it actually relates to the Minecraft Bedrock game - which may also explain why you didn't find it when searching.\n\nFor issues with the Minecraft Bedrock game, please head over to the [Minecraft Bedrock codebase project|https://bugs.mojang.com/browse/MCPE] and make sure the Project field reflects that when logging a report.\n\n%quick_links%",
                 "fillname": ["Enter parent issue ID"]
-            }, {
-                "project": "rlms",
-                "name": "Duplicate",
-                "message": "*Placeholder*\n\n%quick_links%",
-                "fillname": ["Enter parent issue ID"]
-            }]
+            }
         },
         {
             "duplicate_fix": [{
