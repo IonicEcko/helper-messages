@@ -276,9 +276,15 @@
         ],
         [
             {
-                "project": ["mc", "mcl", "bds"],
+                "project": ["mc", "mcl"],
                 "name": "Technical support issue",
                 "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Invalid*{color}.\n\nThis is a technical support issue; this site is for bug reports only. We do not have the resources to provide you with technical support.\nPlease contact the *[Community Support|https://discord.gg/58Sxm23]*.\n\n%quick_links%",
+                "fillname": []
+            },
+            {
+                "project": ["mcpe", "bds"],
+                "name": "Technical support issue",
+                "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Invalid*{color}.\n\nThis is a technical support issue; this site is for bug reports only. We do not have the resources to provide you with technical support.\nPlease contact the *[Community Support Discord|https://discord.gg/58Sxm23]*.\n\n%quick_links%",
                 "fillname": []
             }
         ],

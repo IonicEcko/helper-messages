@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mojira/helper-messages.git"
+    "url": "git+https://github.com/IonicEcko/helper-messages.git"
   },
   "author": "Bemoty",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mojira/helper-messages/issues"
+    "url": "https://github.com/IonicEcko/helper-messages/issues"
   },
   "devDependencies": {
     "copyfiles": "^2.1.1",
