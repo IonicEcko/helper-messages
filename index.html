@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Mojira Messages</title>
+    <title>Mojira Helper Messages</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -13,7 +13,7 @@
 <body>
     <div class="background container-fluid">
         <div class="main">
-            <h2 class="display-4">Mojira Message Web Application</h2>
+            <h2 class="display-4">Mojira Helper Message Web Application</h2>
             <div class="selector">
                 <select class="custom-select mr-sm-2">
                     <option value="0" selected>Select a message</option>
@@ -21,13 +21,9 @@
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Project: MCPE
+                        Project: MC
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item mcpe-dropdown" href="#MCPE">MCPE</a>
-                        <a class="dropdown-item bds-dropdown" href="#BDS">BDS</a>
-                        <a class="dropdown-item rlms-dropdown" href="#RLMS">Realms</a>
-                        <a class="dropdown-item gen-dropdown" href="#GEN">Generic</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="projectDropdownMenu">
                     </div>
                 </div>
             </div>
@@ -39,7 +35,8 @@
             <button type="button" class="btn btn-outline-secondary" id="copybutton" data-toggle="tooltip"
                 data-placement="top" title="Copied!" disabled>Copy</button>
             <div class="footer">
-                <small class="text-muted">Made by <a href="https://bugs.mojang.com/secure/ViewProfile.jspa?name=Bemoty" target="_blank">Bemoty</a>. Modified by <a href="https://bugs.mojang.com/secure/ViewProfile.jspa?name=IonicEcko" target="_blank">IonicEcko</a>.</small>
+                <small class="text-muted">Made by <a href="https://bugs.mojang.com/secure/ViewProfile.jspa?name=Bemoty"
+                        target="_blank">Bemoty</a></small>
             </div>
         </div>
     </div>
