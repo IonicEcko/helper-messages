@@ -198,13 +198,13 @@
             {
                 "project": ["mc", "mcd", "mcpe", "mcl", "mcapi", "mce"],
                 "name": "Report not in English",
-                "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Invalid*{color}.\n\nBug reports are only accepted in English, sorry.\nFeel free to create a new report if you can speak English.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\n\nUnfortunately we are only able to accept bug reports in English. You are welcome to use an online translator, if that helps.  (You can find an example bug report [here|https://help.mojang.com/customer/portal/articles/801354-writing-helpful-bug-reports-for-minecraft].)\n\nWe'd also recommend making use of the [{color:#FF5722}+search feature+{color}|https://bugs.mojang.com/issues/?jql=project%20%3D%20MCPE] before writing a new bug report, as it's very likely that the bug has been mentioned already, and you can add a vote and any new information to the main bug report.\n\n%quick_links%",
                 "fillname": []
             },
             {
                 "project": ["bds"],
                 "name": "Report not in English",
-                "message": "*Thank you for your report!*\n\nUnfortunately we are only able to accept bug reports in English. You are welcome to use an online translator, if that helps.  (You can find an example bug report [here|https://help.mojang.com/customer/portal/articles/801354-writing-helpful-bug-reports-for-minecraft].)\n\nWe'd also recommend making use of the [{color:#FF5722}+search feature+{color}|https://bugs.mojang.com/issues/?jql=project%20%3D%20MCPE] before writing a new bug report, as it's very likely that the bug has been mentioned already, and you can add a vote and any new information to the main bug report.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\n\nUnfortunately we are only able to accept bug reports in English. You are welcome to use an online translator, if that helps.  (You can find an example bug report [here|https://help.mojang.com/customer/portal/articles/801354-writing-helpful-bug-reports-for-minecraft].)\n\nWe'd also recommend making use of the [{color:#FF5722}+search feature+{color}|https://bugs.mojang.com/issues/?jql=project%20%3D%20MCPE] before writing a new bug report, as it's very likely that the bug has been mentioned already, and you can add a vote and any new information to the main bug report.\n\nPlease also note this project is for the Bedrock Dedicated Server software only, if your bug report relates to the Minecraft Bedrock game, please head over to the [MCPE project|https://bugs.mojang.com/projects/MCPE/summary] before logging any subsequent reports.\n\nThanks!\n\n%quick_links%",
                 "fillname": []
             }
         ],
