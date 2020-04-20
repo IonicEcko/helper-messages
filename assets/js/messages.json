@@ -194,15 +194,9 @@
         ],
         [
             {
-                "project": ["mc", "mcd", "mcl", "mce"],
-                "name": "Incomplete",
-                "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Incomplete*{color}.\n\nYour report does not contain enough information. As such, we're unable to understand or reproduce the problem.\nPlease review the guidelines linked below before making further reports.\n\nIn case of a game crash, be sure to attach the crashlog from {{[minecraft/crash-reports/crash-<DATE>-client.txt|https://minecrafthopper.net/help/guides/finding-minecraft-data-folder/]}}.\n\n%quick_links%",
-                "fillname": []
-            },
-            {
                 "project": ["mcpe", "bds"],
                 "name": "Incomplete",
-                "message": "*Thank you for your report!*\nHowever, this issue is {color:#FF5722}*Incomplete*{color}.\n\nYour report does not contain enough information. As such, we're unable to understand or reproduce the problem.\n\nPlease review the guidelines linked below before making further reports.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\nHowever, unfortunately this report is {color:#FF5722}*Incomplete*{color} and has been closed.\n\nIt does not contain enough information and as such, we've unable to understand or reproduce the bug.\n\nPlease have a read through the [Guide on creating bug reports|http://help.mojang.com/customer/portal/articles/801354-writing-helpful-bug-reports-for-minecraft] and make sure to include enough information so that a volunteer can easily reproduce the bug you describe.\n\nScreenshots, videos and clear reproduction steps help immensely in getting your report confirmed.\n\n%quick_links%",
                 "fillname": []
             }
         ],
@@ -216,7 +210,7 @@
             {
                 "project": ["bds"],
                 "name": "Report not in English",
-                "message": "*Thank you for your report!*\n\nUnfortunately we are only able to accept bug reports in English. You are welcome to use an online translator, if that helps. (You can find an example bug ticket [here|https://help.minecraft.net/hc/en-us/articles/360039268071].)\n\nAlso, we'd recommend making use of the search feature before writing a new bug report, as it's very likely that the issue has been mentioned already, and you can add a vote and any new information to the main ticket.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\n\nUnfortunately we are only able to accept bug reports in English. You are welcome to use an online translator, if that helps.  (You can find an example bug report [here|https://help.mojang.com/customer/portal/articles/801354-writing-helpful-bug-reports-for-minecraft].)\n\nWe'd also recommend making use of the [{color:#FF5722}+search feature+{color}|https://bugs.mojang.com/issues/?jql=project%20%3D%20MCPE] before writing a new bug report, as it's very likely that the bug has been mentioned already, and you can add a vote and any new information to the main bug report.\n\n%quick_links%",
                 "fillname": []
             }
         ],
