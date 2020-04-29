@@ -140,7 +140,7 @@
             {
                 "project": ["bds"],
                 "name": "Report not in English",
-                "message": "*Thank you for your report!*\n\nUnfortunately we are only able to accept bug reports in English. You are welcome to use an online translator, if that helps. (You can find an example bug ticket [here|https://help.minecraft.net/hc/en-us/articles/360039268071].)\n\nAlso, we'd recommend making use of the search feature before writing a new bug report, as it's very likely that the issue has been reported already, and you can add a vote and any new information to the main ticket.\n\n%quick_links%",
+                "message": "*Thank you for your report!*\n\nUnfortunately we are only able to accept bug reports in English. You are welcome to use an online translator, if that helps. (You can find an example bug ticket [here|https://help.minecraft.net/hc/en-us/articles/360039268071].)\n\nAlso, we'd recommend making use of the [{color:#FF5722}+search feature+{color}|https://bugs.mojang.com/issues/?jql=project%20%3D%20MCPE] before writing a new bug report, as it's very likely that the issue has been reported already, and you can add a vote and any new information to the main ticket.\n\nThis project is also only for the Bedrock Dedicated Server software, if your issue relates to the Minecraft Bedrock game please head over to the [MCPE Project|https://bugs.mojang.com/projects/MCPE/summary]\n\n%quick_links%",
                 "fillname": []
             }
         ],
