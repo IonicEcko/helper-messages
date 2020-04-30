@@ -5,7 +5,7 @@ window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js');
 
 // Available projects
-const projects = ["mc", "mcd", "mcl", "mcpe", "mcapi", "mce", "bds", "realms"];
+const projects = ["mcpe", "bds", "realms"];
 for (const project of projects) {
   $("#projectDropdownMenu").append($(`<a class="dropdown-item ${project}-dropdown" href="#${project.toUpperCase()}">${project.toUpperCase()}</a>`));
 }
@@ -13,7 +13,7 @@ for (const project of projects) {
 // Timeout for popper copy tooltip
 var clicktimeout;
 // Currently selected project
-var project = "mc";
+var project = "mcpe";
 // Currently selected message code
 var code = "-1";
 
