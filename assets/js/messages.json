@@ -269,6 +269,16 @@
                 "message": "{panel:title=Workaround|borderStyle=dashed|borderColor=#ccc|titleBGColor=#C1F7D6|bgColor=#CEFFFF}\n%s%\n{panel}",
                 "fillname": ["Enter workaround here."]
             }
+        ],
+        [
+            {
+                "project": ["mcd", "mcpe", "bds", "mce"],
+                "name": "Panel - Questions",
+                "message": "{panel:bgColor=#FFC|borderColor=#F88}\nPlease understand that the bug tracker is only a bug reporting tool, staffed by community volunteers. We cannot respond to such questions because we don't have access to the dev team or internals of the bug fixing process. Please reserve comments for adding *new* information about the bug that might help the developers solve it. Other comments and questions about bugs should be directed to Community Management. Thank you!\n{panel}",
+                "fillname": []
+            }
         ]
     ]
 }
+
+
