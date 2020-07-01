@@ -467,7 +467,7 @@ messages:
   duplicate-wp:
     - project:
         - bds
-      name: Duplicate (WP)
+      name: Duplicate (wp)
       shortcut: proj
       message: |-
         *Thank you for your report!*
@@ -482,7 +482,8 @@ messages:
         -- [Minecraft Dungeons|https://bugs.mojang.com/browse/MCD] --- Action-adventure title set in the Minecraft universe
 
         %quick_links%
-      fillname: []
+      fillname:
+        - Enter parent issue ID
   external-server-issue:
     - project:
         - bds
