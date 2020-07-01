@@ -464,6 +464,25 @@ messages:
         %quick_links%
       fillname:
         - Enter parent issue ID
+  duplicate-wp:
+    - project:
+        - bds
+      name: Duplicate (WP)
+      shortcut: proj
+      message: |-
+        *Thank you for your report!*
+        We're tracking this issue in *%s%*, so this ticket is being resolved and linked as a *duplicate*.
+
+        Please note though, this project is for the Bedrock Dedicated Server software only. For any future reports please head over to the appropriate project (links below).
+
+        -- [Minecraft: Bedrock Edition|https://bugs.mojang.com/browse/MCPE] --- Gear VR, iOS, Android, Windows 10 (from the Windows store), Xbox One, Windows 10 Mobile, Fire TV, Nintendo Switch, and PS4
+        -- [Minecraft: Java Edition|https://bugs.mojang.com/browse/MC] --- Windows, Mac, and Linux
+        -- [Minecraft Launcher|https://bugs.mojang.com/browse/MCL] --- Bugs about the Minecraft Launcher specifically
+        -- [Minecraft Earth|https://bugs.mojang.com/browse/MCE] --- AR Compatible Devices
+        -- [Minecraft Dungeons|https://bugs.mojang.com/browse/MCD] --- Action-adventure title set in the Minecraft universe
+
+        %quick_links%
+      fillname: []
   external-server-issue:
     - project:
         - bds
