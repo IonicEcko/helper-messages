@@ -5,7 +5,7 @@ window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js');
 
 // Available projects
-const projects = ["mcpe", "bds", "realms"];
+const projects = ["mc", "mcd", "mcl", "mcpe", "mcapi", "mce", "bds", "realms"];
 for (const project of projects) {
   $("#projectDropdownMenu").append($(`<a class="dropdown-item ${project}-dropdown" href="#${project.toUpperCase()}">${project.toUpperCase()}</a>`));
 }
@@ -13,7 +13,7 @@ for (const project of projects) {
 // Timeout for popper copy tooltip
 var clicktimeout;
 // Currently selected project
-var project = "mcpe";
+var project = "mc";
 // Currently selected message code
 var code = "-1";
 
@@ -38,7 +38,9 @@ $(document).ready(function () {
   }
 
   // Sort messages by shown name
-  messages = messages.sort((a, b) => a[0].name.localeCompare(b[0].name));
+  const sorted = {};
+  Object.keys(messages).sort().forEach(key => { sorted[key] = messages[key]; });
+  messages = sorted;
 
   // Initialize popper tooltips
   $('[data-toggle="tooltip"]').tooltip({
@@ -59,6 +61,13 @@ $(document).ready(function () {
     });
   }
 
+  // Register global Ctrl + C event
+  $(document).keyup(e => {
+    if (e.ctrlKey && e.keyCode === 67 && window.getSelection().toString().length === 0) {
+      $("#copybutton").click();
+    }
+  });
+
   // Update messages in dropdown
   updateDisplay();
 });
@@ -70,18 +79,16 @@ $("#copybutton").click(function () {
   // get selected message id
   var id = $("select").val();
   if (id == "-1" || !dropdownMap.has(id)) {
-    // impossibru, copy button isn't enabled when there is no message selected
-    alert('you dirty hacker');
     return;
   }
 
   const message = dropdownMap.get(id);
-  let messageBody = message.message.replace(/\\n/g, '\n');
+  let messageBody = getStringValue(message.message);
   // Replace predefined variables in the message body
   for (const variable in variables) {
     for (const { project: expected, value } of variables[variable]) {
       if (isExpectedProject(expected, project)) {
-        messageBody = messageBody.replace(new RegExp(`%${variable}%`, 'g'), value);
+        messageBody = messageBody.replace(new RegExp(`%${variable}%`, 'g'), getStringValue(value));
       }
     }
   }
@@ -124,6 +131,12 @@ $("select").change(function () {
   const message = dropdownMap.get(code);
   if (message.fillname.length >= 1) {
     $(".stdtext").html('<input class="form-control" type="text" placeholder="' + message.fillname[0] + '" id="fill">');
+    // Register Enter event
+    $("#fill").keyup(e => {
+      if (e.keyCode === 13) {
+        $("#copybutton").click();
+      }
+    });
   } else {
     $(".stdtext").html('<p class="text-muted" id="msginfo">This message doesn\'t require any extra info.</p>');
   }
@@ -131,6 +144,14 @@ $("select").change(function () {
   // Enable copy button
   $("#copybutton").removeAttr("disabled");
 });
+
+/**
+ * Check if the message is hidden or not.
+ * @param {{hidden: boolean | undefined}} message The message to be checked.
+ */
+function isHidden(message) {
+  return message.hidden !== undefined && message.hidden;
+}
 
 /**
  * Check if the current project matches the expected projects.
@@ -142,6 +163,18 @@ function isExpectedProject(expected, current) {
     return expected === current;
   } else {
     return expected.includes(current);
+  }
+}
+
+/**
+ * Get a string value from `messages.json`.
+ * @param {string | { en: string, [key: string]: string }} val The value in `messages.json`.
+ */
+function getStringValue(val) {
+  if (typeof val === 'string') {
+    return val
+  } else {
+    return val.en
   }
 }
 
@@ -161,7 +194,7 @@ function updateDisplay() {
     var messageArray = messages[i];
     for (let j in messageArray) {
       // Only get messages for current project
-      if (isExpectedProject(messageArray[j].project, project)) {
+      if (!isHidden(messageArray[j]) && isExpectedProject(messageArray[j].project, project)) {
         if (i == code) {
           selected = true;
         }
