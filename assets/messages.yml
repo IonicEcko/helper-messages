@@ -1132,6 +1132,22 @@ messages:
 
         %quick_links%
       fillname: []
+  third-party-mpc:
+    - project:
+        - bds
+        - mcpe
+      name: Third Party MPC
+      shortcut: tpmpc
+      message: |-
+        *Thank you for your report!*
+        However, this issue is {color:#FF5722}*Invalid*{color}.
+
+        Unfortunately we don't accept issues related to third party marketplace content here on the bug tracker, but please create a new report if you believe this affects Mojang developed marketplace content.
+
+        I'd suggest contacting the content creators directly or Mojang [Customer Support|https://help.minecraft.net/hc/en-us/requests/new] for help with the purchase.
+
+        %quick_links%
+      fillname: []
   translation-issue:
     - project: mc
       name: Translation issue
